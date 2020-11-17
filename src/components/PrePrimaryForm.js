@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { api } from "./api";
 import axios from "axios";
 
 export default function PrePrimary() {
@@ -22,8 +22,9 @@ export default function PrePrimary() {
       "secondary-source": secondarySource
     };
     console.log(data);
+    // Rest Api Call
     axios
-      .post(``, data)
+      .post(api, data)
       .then((data) => {
         console.log("PrePrimary Info Response:", data);
       })

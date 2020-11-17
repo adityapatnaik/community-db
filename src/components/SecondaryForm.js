@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { api } from "./api";
 
 export default function SecondaryForm() {
   const [interests, setInterests] = useState("");
@@ -15,8 +16,9 @@ export default function SecondaryForm() {
       skills: skills
     };
     console.log(data);
+    // Rest Api Call
     axios
-      .post(``, data, { crossdomain: true })
+      .post(api, data, { crossdomain: true })
       .then((data) => {
         console.log("Secondary Info Response:", data);
       })

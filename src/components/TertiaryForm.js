@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { api } from "./api";
 
 export default function TertiaryForm() {
   const [college, setCollege] = useState("");
@@ -20,8 +21,9 @@ export default function TertiaryForm() {
       github: github
     };
     console.log(data);
+    // Rest Api Call
     axios
-      .post(``, data, {
+      .post(api, data, {
         crossdomain: true
       })
       .then((data) => {
