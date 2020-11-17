@@ -1,0 +1,78 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+#root {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  position: relative;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  place-items: center;
+  justify-content: center;
+  align-items: start;
+  background-color: rgb(255, 255, 255);
+  /* min-height: 100%; */
+  overflow: auto;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  justify-content: center;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-label {
+  margin: 16px 0 16px 0;
+}
+
+.form-input {
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  padding: 1em;
+  width: 16em;
+  background-color: #ebebeb;
+  color: white;
+}
+
+.submit {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 0.5em;
+  background-color: rgb(169, 169, 221);
+}
+
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
